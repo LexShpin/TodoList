@@ -24,9 +24,11 @@ public class TodoList {
     }
 
     public void printAll() {
+        System.out.println("Current tasks: ");
         for (int i = 0; i < this.todos.size(); i++) {
             System.out.println((i + 1) + ": " + this.todos.get(i));
         }
+        System.out.println();
     }
 
     public String getTodo(int number) {
@@ -47,8 +49,10 @@ public class TodoList {
     }
 
     public void printCompleted() {
+        System.out.println("Completed tasks: ");
         for (int i = 0; i < this.completedTodos.size(); i++) {
             System.out.println((i + 1) + ": " + this.completedTodos.get(i));
         }
+        System.out.println();
     }
 }
