@@ -19,4 +19,10 @@ public class TodoTest {
     public void todoIsCompleted() {
         assertFalse(todo.isCompleted());
     }
+
+    @Test
+    public void todoSetsToBeComplete() {
+        todo.setCompleted();
+        assertTrue(todo.isCompleted());
+    }
 }
